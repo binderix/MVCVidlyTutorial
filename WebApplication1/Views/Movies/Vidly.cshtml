@@ -1,0 +1,20 @@
+﻿@using WebApplication1.ViewModel
+@model WebApplication1.ViewModel.MovieList
+@{
+    ViewBag.Title = "Vidly";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+
+
+<table>
+    <tr>
+        @foreach (var vm in Model.movies)
+        {
+            <td>
+                @vm.Name;
+            </td>
+        }
+    </tr>
+</table>
+
