@@ -26,8 +26,8 @@ namespace WebApplication1.Controllers
             ///var movie = new Movie() { Name = "Shrek" };
             var customers = new List<Customer>
             {
-                new Customer {Name="Harry Heinzel"},
-                new Customer {Name="Nadja Nickel"}
+                new Customer {id=3, Name="Harry Heinzel"},
+                new Customer {id=4, Name="Nadja Nickel"}
             };
 
             var viewModel = new RandomMovieViewModel

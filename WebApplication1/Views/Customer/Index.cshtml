@@ -18,6 +18,7 @@
         @foreach (var customer in Model)
         {
             <tr>
+                <!--string Name, string Action, string Contoller, string routeValue, string htmlAttributes-->
                 <td>@Html.ActionLink(customer.Name,"Detail", "Customer" , new { id = customer.id }, null )</td>
                 <td></td>
                 <td></td>

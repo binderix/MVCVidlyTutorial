@@ -1,5 +1,6 @@
 ﻿@using WebApplication1.ViewModels
 @model WebApplication1.ViewModels.RandomMovieViewModel
+
 @{
     ViewBag.Title = "Random";
     Layout = "~/Views/Shared/_Layout.cshtml";
@@ -7,6 +8,37 @@
 
 
 <h2>@Model.Movie.Name</h2>
-@Model.Customers
+<table class="table table-bordered table-hover">
+    <tr>
+        <th>ID</th>
+        <th>Name</th>
+        <th>Link</th>
+    </tr>
+
+    @foreach (var customer in @Model.Customers)
+    {
+        <tr>
+            <td> @customer.id</td>
+            <td> @customer.Name</td>
+            <td> @Html.ActionLink(customer.Name, "Detail", "Customer", new { id = customer.id }, null)</td>
+        </tr>
+    }
 
 
+
+
+</table>
+
+<div>
+    <h3>Partial View für den Customer 1:</h3>
+
+    @Html.Partial("../Customer/Detail", Model.Customers.FirstOrDefault());
+</div>
+
+<!-- wieso funktioniert das unten nicht??
+<div>
+    <h3>Partial View für den Customer 1:</h3>
+   // @{ var customerselect = Model.Customers.Where(x => x.id == 1).FirstOrDefault(); }
+   // @Html.Partial("../Customer/Detail", customerselect);
+</div>
+    -->

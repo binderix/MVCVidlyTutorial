@@ -85,3 +85,7 @@ C:\Home2019\030_Programming\001_MVCVidly\MVCVidly\WebApplication1\obj\Debug\WebA
 C:\Home2019\030_Programming\001_MVCVidly\MVCVidly\WebApplication1\obj\Debug\WebApplication1.csproj.CopyComplete
 C:\Home2019\030_Programming\001_MVCVidly\MVCVidly\WebApplication1\obj\Debug\WebApplication1.dll
 C:\Home2019\030_Programming\001_MVCVidly\MVCVidly\WebApplication1\obj\Debug\WebApplication1.pdb
+C:\Home2019\030_Programming\001_MVCVidly\MVCVidly\WebApplication1\bin\EntityFramework.dll
+C:\Home2019\030_Programming\001_MVCVidly\MVCVidly\WebApplication1\bin\EntityFramework.SqlServer.dll
+C:\Home2019\030_Programming\001_MVCVidly\MVCVidly\WebApplication1\bin\EntityFramework.xml
+C:\Home2019\030_Programming\001_MVCVidly\MVCVidly\WebApplication1\bin\EntityFramework.SqlServer.xml
